@@ -1,0 +1,15 @@
+.nav-container {
+  width: 100%;
+  background-color: var(--primary);
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    li {
+      list-style: none;
+    }
+   
+  }
+}

@@ -1,0 +1,30 @@
+.body-container {
+    display: flex;
+    justify-content: center;
+
+    .searchbar {
+       display: flex;
+       align-items: center;
+       height: 30px;
+       position: absolute;
+       
+       input {
+        border-radius: 20px;
+        width: 900px;
+        height: 40px;
+        padding-left: 12px;
+        font-size: 16px;
+       }
+
+       .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 25px;
+            position: absolute;
+            right: 12px;
+       }
+
+    }
+}

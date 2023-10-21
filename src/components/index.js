@@ -1,6 +1,6 @@
 import Navbar from "./navbar/Navbar";
 import Header from "./header/Header";
 import Body from "./body/Body";
-import Footer from "./Footer";
+import Card from "./card/Card";
 
-export { Navbar, Header, Body, Footer };
+export { Navbar, Header, Body, Card };

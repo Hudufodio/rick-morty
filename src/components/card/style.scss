@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 80vw;
+  margin: auto;
+  margin-top: 40px;
+
+
+  .characters {
+    display: flex;
+    justify-content: center;
+    right: 220px;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &::after {
+      content: "";
+      width: 26.375em;
+      height: 2px;
+      margin: 15px 7px;
+      background-color: #0b0a0a9b;
+    }
+  }
+}

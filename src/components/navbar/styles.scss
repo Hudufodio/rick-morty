@@ -1,14 +1,54 @@
 .nav-container {
-  width: 100%;
-  background-color: var(--primary);
+ display: flex;
+ justify-content: space-between;
+ width: 100vw;
+ height: 40px;
+ position: fixed;
+ top: 0;
+ z-index: 10;
+ padding-top: 10px;
+ background: var(--primary);
+ font-family: 'Poppins', sans-serif;
 
   ul {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
 
     li {
       list-style: none;
+      padding: 0 30px;
+      font-size: 20px;
+     
+      
+
+      .logo {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 2px;
+        bottom: 5px;
+      }
+
+      .character {
+        position: absolute;
+        right: 120px;
+        text-decoration: none;
+        color: white;
+        font-weight: 800;
+      }
+
+      .about {
+        position: absolute;
+        right: 30px;
+        text-decoration: none;
+        color: white;
+        font-weight: 800;
+      }
+
+      :hover {
+        text-decoration: overline;
+      }
     }
    
   }

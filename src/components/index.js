@@ -1,5 +1,5 @@
 import Navbar from "./navbar/Navbar";
-import Header from "./Header";
+import Header from "./header/Header";
 import Body from "./Body";
 import Footer from "./Footer";
 

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@600&family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+        font-size: 60px;
+        margin-top: 80px;
+        font-family: 'Nosifer', sans-serif;
+        color: var(--primary);
+    }
+}

@@ -29,4 +29,22 @@
        }
 
     }
+
+    .btn-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            border: none;
+            outline: none;
+            width: 150px;
+            padding: 0.3rem 0;
+            margin: 2rem;
+            font-weight: bold;
+            font-size: 1rem;
+            border-radius: 8px;
+
+        }
+    }
 }

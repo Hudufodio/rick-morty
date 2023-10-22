@@ -7,7 +7,6 @@ const Body = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [fetchedData, updateFetchedData] = useState([]);
   const { info, results } = fetchedData;
-  
 
   let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
 
@@ -35,6 +34,9 @@ const Body = () => {
         <div className="icon">
           <BsIcons.BsSearch className="lens" />
         </div>
+      </div>
+      <div className="container-text">
+        <p className="characters">List of characters</p>
       </div>
       <div className="card-compo">
         <Card results={results} />

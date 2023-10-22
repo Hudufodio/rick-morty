@@ -1,7 +1,9 @@
 import "./style.scss";
 import beach from "../../assets/images/beach.jpg";
 
-const Card = () => {
+const Card = ({ results }) => {
+
+  console.log(results)
   return (
     <div>
       <p className="characters">List of characters</p>

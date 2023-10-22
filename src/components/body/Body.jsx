@@ -1,9 +1,28 @@
+import { useState, useEffect } from "react";
 import * as BsIcons from "react-icons/bs";
 import Card from "../card/Card";
 import "./styles.scss";
 
 const Body = () => {
-  let api = "https://rickandmortyapi.com/api";
+  const [pageNumber, setPageNumber] = useState(1);
+  const [fetchedData, updateFetchedData] = useState([]);
+  const { info, results } = fetchedData;
+  
+
+  let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
+
+  useEffect(() => {
+    fetch(api)
+      .then((response) => {
+        !response.ok ? `HTTP error: The status is ${response.status}` : null;
+        return response.json();
+      })
+      .then((data) => updateFetchedData(data))
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }, [api]);
+
   return (
     <div className="body-container">
       <div className="searchbar">
@@ -18,7 +37,7 @@ const Body = () => {
         </div>
       </div>
       <div className="card-compo">
-        <Card />
+        <Card results={results} />
         <div className="btn-group">
           <button>Previous</button>
           <button>Next</button>

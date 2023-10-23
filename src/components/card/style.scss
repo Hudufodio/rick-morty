@@ -1,8 +1,7 @@
 
 .card {
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
-  height: auto;
+  grid-template-columns: repeat(4, 5fr);
   width: 80vw;
   margin: 150px auto;
   gap: 40px;

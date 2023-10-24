@@ -2,7 +2,6 @@ import "./style.scss";
 
 const Card = ({ results }) => {
   let display;
-  console.log(results);
 
   if (results) {
     display = results.map((result) => {
@@ -14,10 +13,10 @@ const Card = ({ results }) => {
               <img src={result.image} alt="image of rick" />
             </div>
             <h3 className="text-name">{name}</h3>
-            <sdiv className="text-human">
+            <div className="text-human">
               <span className="stats">{result.status}</span>&nbsp;
               {result.species}
-            </sdiv>
+            </div>
             <h4 className="text-location">{result.location.name}</h4>
           </div>
         </div>

@@ -1,5 +1,4 @@
 import "./style.scss";
-import beach from "../../assets/images/beach.jpg";
 
 const Card = ({ results }) => {
   let display;
@@ -9,13 +8,16 @@ const Card = ({ results }) => {
     display = results.map((result) => {
       let { id, name } = result;
       return (
-        <div className="card" key={id}>
+        <div key={id}>
           <div className="card-container">
             <div className="section-image">
               <img src={result.image} alt="image of rick" />
             </div>
             <h3 className="text-name">{name}</h3>
-            <span className="text-human">{result.species}</span>
+            <sdiv className="text-human">
+              <span className="stats">{result.status}</span>&nbsp;
+              {result.species}
+            </sdiv>
             <h4 className="text-location">{result.location.name}</h4>
           </div>
         </div>
@@ -25,7 +27,7 @@ const Card = ({ results }) => {
     display = "No characters found 😐";
   }
 
-  return <div>{display}</div>;
+  return <div className="card">{display}</div>;
 };
 
 export default Card;

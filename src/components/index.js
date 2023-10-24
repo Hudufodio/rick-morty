@@ -2,5 +2,6 @@ import Navbar from "./navbar/Navbar";
 import Header from "./header/Header";
 import Body from "./body/Body";
 import Card from "./card/Card";
+import Pagination from "./pagination/Pagination";
 
-export { Navbar, Header, Body, Card };
+export { Navbar, Header, Body, Card, Pagination };

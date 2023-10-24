@@ -17,8 +17,8 @@
       border: none;
 
       &:focus {
-        outline: auto;
-        color: var(--border);
+        outline: none;
+        color: #000;
       }
     }
 
@@ -74,6 +74,8 @@
       font-weight: bold;
       font-size: 1rem;
       border-radius: 8px;
+      color: #fff;
+      background-color: var(--primary);
     }
   }
 }

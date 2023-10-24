@@ -8,9 +8,10 @@ const Body = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [fetchedData, updateFetchedData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [search, setSearch] = useState("");
   const { info, results } = fetchedData;
 
-  const api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
+  const api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
 
   useEffect(() => {
     (async () => {
@@ -21,6 +22,11 @@ const Body = () => {
     })();
   }, [api]);
 
+  const handleChange = (e) => {
+    e.preventDefault();
+    setSearch(e.target.value);
+  };
+
   return (
     <div>
       {isLoading ? (
@@ -29,6 +35,7 @@ const Body = () => {
         <div className="body-container">
           <div className="searchbar">
             <input
+              onChange={handleChange}
               type="text"
               name=""
               className="query"

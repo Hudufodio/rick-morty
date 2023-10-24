@@ -3,17 +3,14 @@ import rick from "../../assets/images/rick.png";
 import "./styles.scss";
 
 const Navbar = () => {
+  const scrollToTop = () => window.scrollTo(0, 0);
+
   return (
     <nav className="nav-container">
       <ul>
         <li>
-          <Link to="/">
-            <img src={rick} alt="image-rick" className="logo" />
-          </Link>
-        </li>
-        <li>
-          <Link to="/characters" className="character">
-            Characters
+          <Link to="./" hrefLang="/">
+            <img src={rick} alt="image-rick" className="logo" onClick={scrollToTop}/>
           </Link>
         </li>
         <li>

@@ -1,5 +1,5 @@
 import React from "react";
-import Body from "../body/Body";
+import ReactPaginate from 'react-paginate';
 
 const Pagination = ({ pageNumber, setPageNumber }) => {
   const next = () => {

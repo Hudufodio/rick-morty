@@ -18,6 +18,10 @@
     max-width: 500px;
   }
 
+  @include tablet {
+    max-width: 780px;
+  }
+
   ul {
     display: flex;
     flex-direction: row;
@@ -37,7 +41,7 @@
         bottom: 5px;
 
         @include mobile {
-          left: 4px;
+          left: 6px;
         }
       }
 
@@ -51,6 +55,10 @@
         @include mobile {
           right: 10px;
           font-weight: 500;
+        }
+
+        @include tablet {
+          right: 12px;
         }
       }
 

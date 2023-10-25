@@ -7,12 +7,25 @@
   margin: 150px 0 50px 0;
   gap: 50px;
 
+  @include screen {
+    grid-template-columns: repeat(3,5fr);
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(2, 10fr);
+    width: 67vw;
+  }
+
   @include mobile {
-    width: 50vw;
+    width: 54vw;
     margin: auto;
     margin-top: 150px;
     display: flex;
     flex-direction: column;
+  }
+
+  @include s_mobile {
+    width: 72vw;
   }
 
   .card-container {
@@ -28,7 +41,6 @@
     box-shadow: 0 4px 30px #0000001a;
     backdrop-filter: blur(8.9px);
     -webkit-backdrop-filter: blur(8.9px);
-
 
     .section-image {
       display: flex;

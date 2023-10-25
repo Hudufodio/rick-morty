@@ -1,14 +1,14 @@
 .nav-container {
- display: flex;
- justify-content: space-between;
- width: 100vw;
- height: 40px;
- position: fixed;
- top: 0;
- z-index: 10;
- padding-top: 10px;
- background: var(--primary);
- font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  padding-top: 10px;
+  background: var(--primary);
+  font-family: "Poppins", sans-serif;
 
   ul {
     display: flex;
@@ -19,8 +19,6 @@
       list-style: none;
       padding: 0 30px;
       font-size: 20px;
-     
-      
 
       .logo {
         width: 30px;
@@ -28,14 +26,6 @@
         position: absolute;
         left: 2px;
         bottom: 5px;
-      }
-
-      .character {
-        position: absolute;
-        right: 120px;
-        text-decoration: none;
-        color: white;
-        font-weight: 800;
       }
 
       .about {
@@ -50,6 +40,5 @@
         text-decoration: overline;
       }
     }
-   
   }
 }

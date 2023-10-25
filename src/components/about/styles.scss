@@ -1,25 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@600&family=Raleway:wght@300&family=Roboto:wght@300&display=swap");
+@import '../../breakpoints.scss';
+
 .about-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+  margin-top: 50px;
+
+  @include mobile {
     width: 80vw;
-    margin: auto;
-    margin-top: 50px;
+  }
 
-    h1 {
-        color: var(--primary);
-        font-size: 40px;
-        font-weight: 800;
-        margin-bottom: 12px;
+  h1 {
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Nosifer", sans-serif;
+    margin-bottom: 12px;
+
+    @include mobile {
+      font-size: 25px;
+      font-weight: 400;
+    }
+  }
+
+  .about-text {
+    color: #000;
+    font-size: 30px;
+    text-align: justify;
+
+    @include mobile {
+      font-size: 25px;
+      text-align: initial;
     }
 
-    .about-text {
-        color: #000;
-        font-size: 30px;
-
-        a {
-            font-size: 25px;
-        }
+    a {
+      font-size: 25px;
     }
+  }
 }

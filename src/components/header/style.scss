@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@600&family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
+@import '../../breakpoints.scss';
+
 
 .text-container {
     display: flex;
     justify-content: center;
     align-items: center;
 
+    @include mobile {
+        text-align: center;
+    }
+
     .text {
         font-size: 60px;
-        margin-top: 40px;
+        margin: 40px 0 10px 0;
         font-family: 'Nosifer', sans-serif;
         color: var(--primary);
+
+        @include mobile {
+            font-size: 35px;
+        }
     }
 }

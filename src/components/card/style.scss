@@ -1,10 +1,19 @@
+@import "../../breakpoints.scss";
 
 .card {
   display: grid;
   grid-template-columns: repeat(4, 5fr);
   width: 80vw;
   margin: 150px 0 50px 0;
-  gap: 40px;
+  gap: 50px;
+
+  @include mobile {
+    width: 50vw;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
 
   .card-container {
     display: flex;
@@ -19,6 +28,7 @@
     box-shadow: 0 4px 30px #0000001a;
     backdrop-filter: blur(8.9px);
     -webkit-backdrop-filter: blur(8.9px);
+
 
     .section-image {
       display: flex;
@@ -43,7 +53,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 7px;
+      text-align: center;
     }
 
     .text-human {
@@ -56,6 +66,12 @@
         border-radius: 50%;
         background-color: green;
       }
+    }
+
+    .text-location {
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
   }
 }

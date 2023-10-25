@@ -24,6 +24,7 @@ Mobile responsive para adaptar a dispositivos mobile y ipad.
     * React + Vite
     * Javascript
     * Fetch API
+    *React tilt
     * Sass (scss)
     * HTML
 

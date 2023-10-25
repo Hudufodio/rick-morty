@@ -1,3 +1,5 @@
+@import '../../breakpoints.scss';
+
 .body-container {
   display: flex;
   justify-content: center;
@@ -5,10 +7,18 @@
   .searchbar {
     display: flex;
     align-items: center;
-    height: 30px;
+    height: 40px;
     position: absolute;
 
+    @include mobile {
+      height: 25px;
+      margin-top: 12px;
+    }
+
     input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border-radius: 20px;
       width: 900px;
       height: 40px;
@@ -19,6 +29,11 @@
       &:focus {
         outline: none;
         color: #000;
+      }
+
+      @include mobile {
+        width: 340px;
+        height: 40px;
       }
     }
 
@@ -38,7 +53,12 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 160px;
+    top: 211px;
+    height: 50px;
+
+    @include mobile {
+      top: 170px;
+    }
 
     .characters {
       display: flex;
@@ -56,7 +76,15 @@
         height: 3px;
         margin: 15px 7px;
         background-color: var(--border);
+
+        @include mobile {
+          width: 0;
+          height: 0;
+          margin: auto;
+        }
       }
+
+  
     }
   }
 
@@ -76,6 +104,10 @@
       border-radius: 8px;
       color: #fff;
       background-color: var(--primary);
+
+      @include mobile {
+        width: 6.25em;
+      }
     }
   }
 }

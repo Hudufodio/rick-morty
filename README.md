@@ -1,33 +1,36 @@
-# Project Rick and Morty
-Rick and morty api call of characters in the series built using react + vite.
-Character name, location and status implemented, ease search of character by name and also possible
-page toggle.
+# Proyecto Rick y Morty
+Llamada API de Rick y Morty a los personajes de la serie creada con React + Vite.
+Nombre del personaje, ubicación y estado implementados, facilita la búsqueda del personaje por nombre y también es posible
+alternar página.
 
-# Motive
-A UI friendly app developed to aid rick and morty series fanatics to easily browse and know more about their favorite characters 
-as well as a general info about the series.
+# Motivo
+Una aplicación compatible con la interfaz de usuario desarrollada para ayudar a los fanáticos de las series de Rick y Morty a navegar fácilmente y saber más sobre sus personajes favoritos.
+así como información general sobre la serie.
 
-# Build Status
-Build complete, ready for shipping to production after testing.
+# Estado
+Construido completo, listo para su envío a producción después de las pruebas.
 
-# Code style
-React component based method, folderize naming conventions and camelCase system of naming.
- Componization of code, DRY principle and sass styling( scss).
+# Estilo de código
+Método basado en componentes de React, convenciones de nomenclatura en carpetas y sistema de nomenclatura camelCase.
+Componización de código, principio DRY y estilo sass (scss).
+Mobile responsive para adaptar a dispositivos mobile y ipad.
 
- # Screenshots 
+# Capturas de pantalla 
  ![front-page of app](src/assets/images/front.png)
- ![bottom-pageof app](src/assets/images/back.png)
+ ![bottom-page of app](src/assets/images/back.png)
+ ![about section](src/assets/images/about.png)
 
- # Framework used/stacks
+# Framework usado/stacks
     * React + Vite
     * Javascript
     * Fetch API
     * Sass (scss)
-    *HTML
+    * HTML
 
-# Installation
-Open project in your IDE
-npm install, to install dependencies or clone project on github
-npm run dev
-deploy project to production environment by toggling the link.
+# Instalación
+Abra el proyecto en su IDE
+npm install, para instalar dependencias o clonar proyecto en github
+npm run dev en su terminal 
+para ejecutar y abre el link.
+click el link para abrir el interface en su browser.
 

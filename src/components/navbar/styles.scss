@@ -1,3 +1,5 @@
+@import '../../breakpoints.scss';
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -10,10 +12,21 @@
   background: var(--primary);
   font-family: "Poppins", sans-serif;
 
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  @include tablet {
+    max-width: 780px;
+  }
+
   ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 
     li {
       list-style: none;
@@ -26,6 +39,10 @@
         position: absolute;
         left: 2px;
         bottom: 5px;
+
+        @include mobile {
+          left: 6px;
+        }
       }
 
       .about {
@@ -34,6 +51,15 @@
         text-decoration: none;
         color: white;
         font-weight: 800;
+
+        @include mobile {
+          right: 10px;
+          font-weight: 500;
+        }
+
+        @include tablet {
+          right: 12px;
+        }
       }
 
       :hover {

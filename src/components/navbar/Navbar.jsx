@@ -19,7 +19,7 @@ const Navbar = ({ toggle }) => {
           </Link>
         </li>
         <li>
-          <a to="/#about" className="about" onClick={toggle} href="/#about">
+          <a className="about" onClick={toggle} href="/#about">
             Acerca de
           </a>
         </li>

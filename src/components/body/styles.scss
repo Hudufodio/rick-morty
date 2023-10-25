@@ -1,3 +1,5 @@
+@import '../../breakpoints.scss';
+
 .body-container {
   display: flex;
   justify-content: center;
@@ -5,10 +7,18 @@
   .searchbar {
     display: flex;
     align-items: center;
-    height: 30px;
+    height: 40px;
     position: absolute;
 
+    @include mobile {
+      height: 25px;
+      margin-top: 12px;
+    }
+
     input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border-radius: 20px;
       width: 900px;
       height: 40px;
@@ -19,6 +29,19 @@
       &:focus {
         outline: none;
         color: #000;
+      }
+
+      @include mobile {
+        width: 340px;
+        height: 40px;
+      }
+
+      @include tablet {
+        max-width: 550px;
+      }
+
+      @include s_mobile {
+        width: 280px;
       }
     }
 
@@ -38,7 +61,12 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 160px;
+    top: 211px;
+    height: 50px;
+
+    @include mobile {
+      top: 300px;
+    }
 
     .characters {
       display: flex;
@@ -50,13 +78,31 @@
       font-family: Arial, Helvetica, sans-serif;
       color: var(--primary);
 
+      @include mobile {
+        font-weight: 600;
+      }
+
       &::after {
         content: "";
         width: 26.375em;
         height: 3px;
         margin: 15px 7px;
         background-color: var(--border);
+
+        @include mobile {
+          content: none;
+          width: 0;
+          height: 0;
+          margin: auto;
+
+        }
+
+        @include tablet {
+          width: 12.375em;
+        }
       }
+
+  
     }
   }
 
@@ -76,6 +122,10 @@
       border-radius: 8px;
       color: #fff;
       background-color: var(--primary);
+
+      @include mobile {
+        width: 6.25em;
+      }
     }
   }
 }

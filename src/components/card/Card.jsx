@@ -1,3 +1,4 @@
+import Tilt from 'react-parallax-tilt';
 import "./style.scss";
 
 const Card = ({ results }) => {
@@ -8,7 +9,7 @@ const Card = ({ results }) => {
       let { id, name } = result;
       return (
         <div key={id}>
-          <div className="card-container">
+          <Tilt className="card-container">
             <div className="section-image">
               <img src={result.image} alt="image of rick" />
             </div>
@@ -18,7 +19,7 @@ const Card = ({ results }) => {
               {result.species}
             </div>
             <h4 className="text-location">{result.location.name}</h4>
-          </div>
+          </Tilt>
         </div>
       );
     });

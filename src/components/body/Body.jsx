@@ -39,14 +39,14 @@ const Body = () => {
               type="text"
               name=""
               className="query"
-              placeholder="find a character"
+              placeholder="encuentra un personaje"
             />
             <div className="icon">
               <BsIcons.BsSearch className="lens" />
             </div>
           </div>
           <div className="container-text">
-            <p className="characters">List of characters</p>
+            <p className="characters">Lista de personajes</p>
           </div>
           <div className="card-compo">
             <Card results={results} />

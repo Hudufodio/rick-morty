@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { Navbar, Header, Body } from "./components";
+import { Navbar, Header, Body, About } from "./components";
 import './global.scss';
 
 const App = () => {
@@ -10,6 +10,7 @@ const App = () => {
         <Navbar />
         <Header />
         <Body />
+        <About />
       </div>
     </BrowserRouter>
   );

@@ -1,19 +1,18 @@
 import React from "react";
-import ReactPaginate from 'react-paginate';
 
 const Pagination = ({ pageNumber, setPageNumber }) => {
   const next = () => {
     setPageNumber((x) => x + 1);
   };
   const prev = () => {
-    if(pageNumber === 1) return;
+    if (pageNumber === 1) return;
     setPageNumber((x) => x - 1);
   };
 
   return (
     <div className="btn-group">
-      <button onClick={prev}>Prev</button>
-      <button onClick={next}>Next</button>
+      <button onClick={prev}>Ante.</button>
+      <button onClick={next}>Sigu.</button>
     </div>
   );
 };

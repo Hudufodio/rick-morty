@@ -8,7 +8,7 @@
   gap: 50px;
 
   @include screen {
-    grid-template-columns: repeat(3,5fr);
+    grid-template-columns: repeat(3, 5fr);
   }
 
   @include tablet {
@@ -43,12 +43,6 @@
     -webkit-backdrop-filter: blur(8.9px);
 
     .section-image {
-      display: flex;
-      justify-content: center;
-      margin-top: 0;
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
       position: relative;
       bottom: 52px;
 
@@ -71,13 +65,6 @@
     .text-human {
       position: relative;
       bottom: 20px;
-
-      .stats {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: green;
-      }
     }
 
     .text-location {

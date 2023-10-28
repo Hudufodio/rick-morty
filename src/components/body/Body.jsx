@@ -28,7 +28,7 @@ const Body = () => {
   };
 
   return (
-    <div>
+    <>
       {isLoading ? (
         <div>Loading...</div>
       ) : (
@@ -54,7 +54,7 @@ const Body = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

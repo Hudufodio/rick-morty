@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@600&family=Raleway:wght@300&family=Roboto:wght@300&display=swap");
-@import '../../breakpoints.scss';
+@import "../../breakpoints.scss";
 
 .about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   width: 80vw;
   margin: auto;
@@ -28,7 +25,6 @@
   }
 
   .about-text {
-    color: #000;
     font-size: 30px;
     text-align: justify;
 

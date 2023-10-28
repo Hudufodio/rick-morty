@@ -5,7 +5,6 @@
 .text-container {
     display: flex;
     justify-content: center;
-    align-items: center;
 
     @include mobile {
         text-align: center;

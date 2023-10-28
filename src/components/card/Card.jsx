@@ -1,4 +1,4 @@
-import Tilt from 'react-parallax-tilt';
+import Tilt from "react-parallax-tilt";
 import "./style.scss";
 
 const Card = ({ results }) => {
@@ -15,7 +15,52 @@ const Card = ({ results }) => {
             </div>
             <h3 className="text-name">{name}</h3>
             <div className="text-human">
-              <span className="stats">{result.status}</span>&nbsp;
+              {(() => {
+                if (result.status === "Dead") {
+                  return (
+                    <span
+                      className="stats"
+                      style={{
+                        width: "20px",
+                        height: "20px",
+                        borderRadius: "50%",
+                        backgroundColor: "red",
+                      }}
+                    >
+                      {result.status}
+                    </span>
+                  );
+                } else if (result.status === "Alive") {
+                  return (
+                    <span
+                      className="stats"
+                      style={{
+                        width: "20px",
+                        height: "20px",
+                        borderRadius: "50%",
+                        backgroundColor: "green",
+                      }}
+                    >
+                      {result.status}
+                    </span>
+                  );
+                } else {
+                  return (
+                    <span
+                      className="stats"
+                      style={{
+                        width: "20px",
+                        height: "20px",
+                        borderRadius: "50%",
+                        backgroundColor: "grey",
+                      }}
+                    >
+                      {result.status}
+                    </span>
+                  );
+                }
+              })()}
+              &nbsp;
               {result.species}
             </div>
             <h4 className="text-location">{result.location.name}</h4>
